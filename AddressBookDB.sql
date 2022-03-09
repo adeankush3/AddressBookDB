@@ -71,6 +71,15 @@ SELECT * from PersonContact
 
 SELECT COUNT(type) from PersonContact
 
+-------------------UC11-Ability to add person to both Friend and Family------------------
+
+INSERT into PersonContact values ('Neha','G','Havda','Kolkata','West Bangal','700073','7775553330','nehag@mail.com','Family')
+
+INSERT into PersonContact values ('Nityanand','Gore','Washim Road','Washim','MH','421013','9988558899','Nityanandgore@mail.com','Friend')
+
+SELECT * from PersonContact
+
+
 
 --- ALTER, DROP query to remove data column --
 ALTER table PersonContact DROP column Address;
